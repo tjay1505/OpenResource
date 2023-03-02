@@ -43,4 +43,22 @@ body {
   border: 0.5px solid rgb(191, 226, 255);
   width: 5vw;
   margin: 10%;
+}
+
+.menu_box {
+  border: none;
+  width: 30vw;
+  height: 40vh;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: x-small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu_box a {
+  margin: 1%;
 }/*# sourceMappingURL=index.css.map */

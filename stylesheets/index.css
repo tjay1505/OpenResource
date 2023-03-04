@@ -16,6 +16,7 @@ body {
   align-items: center;
   padding: 2%;
   background-color: #30a2c5;
+  z-index: 1;
 }
 
 .header_logo img {
@@ -43,4 +44,108 @@ body {
   border: 0.5px solid rgb(191, 226, 255);
   width: 5vw;
   margin: 10%;
+}
+
+.menu_box {
+  border: none;
+  width: 50vw;
+  height: 87vh;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: x-small;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s linear;
+  animation: sections 0.5s;
+}
+.menu_box a {
+  margin: 1%;
+}
+
+@keyframes sections {
+  from {
+    width: 50vw;
+  }
+  to {
+    width: 0vw;
+  }
+}
+.DNB {
+  width: 3.5em;
+  height: 3.5em;
+  background-color: rgb(211, 139, 57);
+  border-radius: 50%;
+  position: absolute;
+  top: -1.9em;
+  left: -1.9em;
+  transition: 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DNB .img {
+  width: 4vmax;
+  margin: 0%;
+  height: 4vmax;
+  position: relative;
+  transition: 0.2s linear;
+  filter: opacity(0);
+}
+.DNB .img:hover {
+  width: 5vmax;
+  height: 5vmax;
+  margin: 3%;
+}
+
+.DNB:hover {
+  width: 4.5em;
+  height: 4.5em;
+}
+.DNB:hover .img {
+  filter: opacity(9);
+}
+
+.one {
+  top: 8px;
+  left: 28px;
+}
+
+.two {
+  top: 18px;
+  left: 26px;
+}
+
+.three {
+  top: 21px;
+  left: 3px;
+}
+
+.four {
+  top: 9px;
+  left: 14px;
+}
+
+.five {
+  top: -1px;
+  left: 3px;
+}
+
+.six {
+  top: 0px;
+  left: -22px;
+}
+
+@keyframes toggleon {
+  from {
+    width: 3.2em;
+    height: 3.2em;
+  }
+  to {
+    width: 6em;
+    height: 6em;
+  }
 }/*# sourceMappingURL=index.css.map */
